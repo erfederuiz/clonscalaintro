@@ -2,17 +2,19 @@ name := "scalaintrocourse"
 
 organization := "org.hablapps"
 
-unmanagedSourceDirectories in Compile ++= Seq(
-  baseDirectory.value / "tema1-objetos",
-  baseDirectory.value / "tema2-sintaxis",
-  baseDirectory.value / "tema3-genericidad",
-  baseDirectory.value / "tema4-funcional"
-)
+scalaVersion := "2.11.7"
 
 scalacOptions ++= Seq(
   "-unchecked",
   "-deprecation",
   "-feature",
-  // "-Xprint:typer",
-  // "-Xlog-implicit-conversions",
   "-language:higherKinds")
+
+initialCommands in console := """
+  | import org.hablapps.curso._
+  | import intro._
+  | import oo._
+  | import funcional._
+  | import azucar._
+  | import genericidad._
+  |""".stripMargin

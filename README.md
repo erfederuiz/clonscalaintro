@@ -40,7 +40,7 @@ $ cd scalaintrocourse
 $ ./sbt ~update
 ```
 
-Se recomienda ejecutar este comando antes de venir al curso para evitar saturaciones en la red inalámbrica.
+Se recomienda ejecutar este comando antes de venir al curso para evitar saturaciones en la red inalámbrica y porque es un proceso que puede tardar varios minutos en finalizar.
 
 #### Editores
 
