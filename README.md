@@ -62,7 +62,7 @@ El correo electrónico del profesor es: [jesus.lopez@hablapps.com](mailto:jesus.
 
 #### Twitter
 
-El hashtag "oficial" del curso es el siguiente: `#scalaintrocourse`
+El hashtag "oficial" del curso es el siguiente: `#lightningscalacourse`
 
 ## Localización y fecha
 
