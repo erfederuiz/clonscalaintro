@@ -12,7 +12,8 @@ Las explicaciones durante el curso alternarán el uso de transparencias y ejempl
 
 [Introducción a Scala](IntroduccionAScala.pdf)
 
-Tanto el código "en vivo" como el historial de la consola de comandos se encontrarán también disponibles en este repositorio al finalizar el curso.
+Tanto el código "en vivo" generado durante la sesión como los ejercicios
+resueltos podrán encontrarse disponibles en este repositorio al finalizar el curso.
 
 ## Clonación del repositorio
 
@@ -22,7 +23,10 @@ Para poder seguir las explicaciones del curso será necesario clonar el reposito
 $ git clone https://github.com/<<vuestrousuario>>/scalaintrocourse.git
 ```
 
-Una vez finalizado el curso, el repositorio será actualizado, con el objetivo de publicar los ejercicios y otros fuentes que se mostraron durante el curso. Para traer los últimos cambios a nuestra copia local será necesario ejecutar la orden:
+Durante la sesión, el repositorio será actualizado varias veces (concretamente
+al finalizar cada módulo), con el objetivo de sincronizar los fuentes del
+profesor con los del alumno. Para traer los últimos cambios a nuestra copia
+local será necesario ejecutar la orden:
 
 ```bash
 $ cd scalaintrocourse
