@@ -3,11 +3,11 @@ package org.hablapps.curso.genericidad
 // 0. Partimos de una versión reducida de la lista generada en el módulo
 // anterior.
 
-sealed trait Lista
-
-case class Cons(cabeza: Int, resto: Lista = Nada()) extends Lista
-
-case class Nada() extends Lista
+// sealed trait Lista
+//
+// case class Cons(cabeza: Int, resto: Lista = Nada()) extends Lista
+//
+// case class Nada() extends Lista
 
 // 1. Generalizamos sobre `Int` añadiendo parámetro tipo `A`
 

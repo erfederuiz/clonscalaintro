@@ -12,13 +12,11 @@ class Azucar {
     if (a) b else c
   }
 
-  def f4(a: Boolean, b: String, c: String): String = {
-    if (a) b else c
-  }
-
-  def f5(a: Int*): Int = a.reduce { (a1, a2) =>
+  def f4(a: Int*): Int = a.reduce { (a1, a2) =>
     a1 + a2
   }
+
+  def f5(f: Int => String): Unit = ()
 
   def apply(a: Int): Int = a
 }

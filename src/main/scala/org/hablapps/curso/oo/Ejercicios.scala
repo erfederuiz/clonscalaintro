@@ -6,10 +6,11 @@ object Ejercicios extends App {
   // y 'precio' (Double).
 
   // Ejercicio 2. Crea un companion object para este trait, que contenga un
-  // método, que reciba el color como parámetro y que fije el precio a 3.0.
+  // método de creación de frutas, que reciba el color como parámetro y que fije
+  // el precio a 3.0.
 
-  // Ejercicio 3. Crea un plátano, que herede de `Fruta`, fijando el color a
-  // "amarillo" y recibiendo el precio en el constructor.
+  // Ejercicio 3. Crea una clase `Platano`, que herede de `Fruta`, fijando el
+  // color a "amarillo" y recibiendo el precio en el constructor.
 
   // Ejercicio 4: Crea una fruta de cualquier color y un plátano de cualquier
   // precio. Imprime por pantalla el precio de la fruta (debería ser 3.0) y el
