@@ -12,8 +12,9 @@ object Ejercicios extends App {
     }
   }
 
+  import Ejercicio1._
+
   object Ejercicio2 {
-    import Ejercicio1.Fruta
     // A continuación aparece el Companion Object para el trait `Fruta` que
     // creamos en el primer ejercicio. Implementa el método `crear`, que crea
     // una `Fruta`, valiéndose del `_color` recibido como argumento y fijando el
@@ -25,21 +26,29 @@ object Ejercicios extends App {
     }
   }
 
+  import Ejercicio2._
+
   object Ejercicio3 {
-    import Ejercicio1.Fruta
     // Extiende la clase `Platano`, para que herede de `Fruta`, fijando el
     // método `color` a "amarillo" y recibiendo el precio en el constructor.
-    class Platano
+    class Platano {
+      def color: String = ???
+    }
   }
 
+  import Ejercicio3._
+
   object Ejercicio4 {
-    import Ejercicio2.Fruta, Ejercicio3.Platano
-    // Crea una fruta de cualquier color y un plátano de cualquier precio.
-    // Imprime por pantalla el precio de la fruta (debería ser 3.0) y el color
-    // del plátano (debería ser "amarillo")
-    val fruta   = ???
-    val platano = ???
-    println("El precio de la fruta es: " + ???)
-    println("El color del plátano es: "  + ???)
+    // Crea una fruta de cualquier color (utilizando `Fruta.crear`) y un plátano
+    // de cualquier precio (utilizando el constructor de la clase `Platano`).
+    val fruta: Fruta = ???
+    val platano: Platano = ???
   }
+
+  import Ejercicio4._
+
+  // Ejecuta `org.hablapps.curso.oo.Ejercicios` y asegúrate de que el precio de
+  // la `fruta` (3.0) y el color del `platano` ("amarillo") sean correctos.
+  println("El precio de la fruta es: " + ???)
+  println("El color del plátano es: "  + ???)
 }
