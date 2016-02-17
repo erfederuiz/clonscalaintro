@@ -64,10 +64,14 @@ El correo electrónico del profesor es: [jesus.lopez@hablapps.com](mailto:jesus.
 
 El hashtag "oficial" del curso es el siguiente: `#lightningscalacourse`
 
+#### Red wifi
+
+El usuario y la constraseña de la red WIFI para su uso en el aula son las siguientes:
+* Usuario: hablapps
+* Constraseña: `Dici@18.`       (punto final incluido)
+
 ## Localización y fecha
 
 El curso tendrán lugar el viernes 19 de febrero, en horario de 16:00 a 21:00 horas, en la sala 1.1.A.01 situada en la primera planta del [Parque Tecnológico de la UC3M](https://www.google.com/maps?q=Parque+Tecnol%C3%B3gico,+Av+Gregorio+Peces+Barba,+28919+Legan%C3%A9s,+Madrid).
 
-El usuario y la constraseña de la red WIFI son las siguientes:
-* Usuario: hablapps
-* Constraseña: `Dici@18.`       (punto final incluido)
+El aparcamiento en las inmedicaciones del parque no tiene ningún problema. Para aquellos que vengáis en transporte público, tenéis la opción de llegar mediante una combinación de [tren+autobús](https://www.google.com/maps/d/u/0/edit?mid=za8zleNzZrnc.kkG6K8Rm3_wA), o solo [autobús](https://www.google.com/maps/d/u/0/edit?mid=za8zleNzZrnc.kdbrfsWhyV_Q). [Aquí](http://portal.uc3m.es/portal/page/portal/investigacion/parque_cientifico/localizacion/transporte_publico) tenéis también información de cómo llegar.
