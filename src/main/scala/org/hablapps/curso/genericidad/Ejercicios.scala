@@ -1,23 +1,43 @@
 package org.hablapps.curso.genericidad
 
-import org.hablapps.curso.oo._
-
 object Ejercicios extends App {
 
-  // val l1: List[Bicicleta] = List(
-  //   new BicicletaDeMontaña(10, 1,  5, 0),
-  //   new BicicletaDeMontaña(10, 2,  8, 2),
-  //   new BicicletaDeMontaña(20, 4, 30, 3),
-  //   new BicicletaDeMontaña(25, 6, 45, 1))
+  case class Bicicleta(marcha: Int, cadencia: Int, velocidad: Int)
 
-  // Ejercicio 1. Filtra todas aquellas bicicletas que se encuentren en una
-  // marcha impar.
+  val bicicletas: List[Bicicleta] = List(
+    Bicicleta(1,  0,  5),
+    Bicicleta(2, 10,  8),
+    Bicicleta(4, 25, 30),
+    Bicicleta(6,  1, 45))
 
-  // Ejercicio 2. Reutilizando la salida del ejercicio anterior, busca la
-  // bicicleta que vaya a mayor velocidad. Pista: utiliza el método `reduce`
-  // para llevar a cabo la implementación.
+  // Consulta la API de `List` para acceder a la documentación de los métodos
+  // que usaremos en los siguientes ejercicios:
+  // http://www.scala-lang.org/api/current/#scala.collection.immutable.List
 
-  // Ejercicio 3. Utilizando la lista original, suma las cadencias de todas las
-  // bicicletas. Pista: utiliza el método `foldLeft` para llevar a cabo la
-  // implementación.
+  object Ejercicio1 {
+    // Filtra todas aquellas bicicletas que se encuentren en una marcha impar. A
+    // tener en cuenta:
+    // - El operador "módulo" se representa mediante `%`, por ejemplo `x % y`
+    val res: List[Bicicleta] = bicicletas.filter(???)
+  }
+
+  println("El resultado del ejercicio 1 es: " + Ejercicio1.res)
+
+  object Ejercicio2 {
+    // Busca la bicicleta que circule a mayor velocidad. Pista: utiliza el
+    // método `reduce` para llevar a cabo esta implementación. A tener en cuenta:
+    // - La estructura de control de flujo "if" se despliega con esta sintáxis:
+    // `if (b) expr1 else expr2`
+    val res: Bicicleta = ???
+  }
+
+  println("El resultado del ejercicio 2 es: " + Ejercicio2.res)
+
+  object Ejercicio3 {
+    // Suma las cadencias de todas las bicicletas. ¿A qué estructura de control
+    // de flujo te recuerda `foldLeft`?
+    val res: Int = bicicletas.foldLeft(???)(???)
+  }
+
+  println("El resultado del ejercicio 3 es: " + Ejercicio3.res)
 }
