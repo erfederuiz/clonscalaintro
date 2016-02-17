@@ -2,6 +2,8 @@ package org.hablapps.curso.funcional
 
 // 1. Crear estructura propia para poder trabajar con listas.
 
+sealed trait Lista
+
 // 2. Añadimos un método para insertar un nuevo elemento en la lista (por la
 // cabeza)
 
