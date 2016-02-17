@@ -12,7 +12,6 @@ scalacOptions ++= Seq(
 
 initialCommands in console := """
   | import org.hablapps.curso._
-  | import intro._
   | import oo._
   | import funcional._
   | import azucar._

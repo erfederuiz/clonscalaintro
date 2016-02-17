@@ -19,10 +19,12 @@ package org.hablapps.curso.azucar
 //     case Nada() => Nada()
 //   }
 //
-//   def ++(l: Lista): Lista = this match {
+//   def concatenar(l: Lista): Lista = this match {
 //     case Cons(cabeza, resto) => Cons(cabeza, resto.++(l))
 //     case Nada() => l
 //   }
+//
+//   def ++(l: Lista): Lista = concatenar(l)
 //
 //   def existe(f: Int => Boolean): Boolean = this match {
 //     case Cons(cabeza, _) if f(cabeza) => true
@@ -30,12 +32,12 @@ package org.hablapps.curso.azucar
 //     case Nada() => false
 //   }
 //
-//   def contiene(l: Lista, i: Int): Boolean = {
+//   def contiene(i: Int): Boolean = {
 //     existe(j => i == j)
 //   }
 //
-//   def dropWhile(f: Int => Boolean): Lista = this match {
-//     case Cons(cabeza, resto) if f(cabeza) => resto.dropWhile(f)
+//   def tirarMientras(f: Int => Boolean): Lista = this match {
+//     case Cons(cabeza, resto) if f(cabeza) => resto.tirarMientras(f)
 //     case _ => this
 //   }
 // }
