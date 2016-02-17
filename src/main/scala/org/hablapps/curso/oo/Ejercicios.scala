@@ -2,17 +2,44 @@ package org.hablapps.curso.oo
 
 object Ejercicios extends App {
 
-  // Ejercicio 1. Crea un trait Fruta, que tenga como métodos: 'color' (String)
-  // y 'precio' (Double).
+  object Ejercicio1 {
+    // Extiende el trait Fruta, añadiendo un método 'precio' sin implementación
+    // asociada, que no recibe ningún argumento y que devuelve un Double como
+    // salida. Toma el método `color` como referencia.
+    trait Fruta {
+      def color: String
+      ???
+    }
+  }
 
-  // Ejercicio 2. Crea un companion object para este trait, que contenga un
-  // método de creación de frutas, que reciba el color como parámetro y que fije
-  // el precio a 3.0.
+  object Ejercicio2 {
+    import Ejercicio1.Fruta
+    // A continuación aparece el Companion Object para el trait `Fruta` que
+    // creamos en el primer ejercicio. Implementa el método `crear`, que crea
+    // una `Fruta`, valiéndose del `_color` recibido como argumento y fijando el
+    // precio a 3.0. Recuerda que un trait no tiene constructores, por lo que
+    // tendrás que utilizar la sintaxis de clases anónimas para poder crear una
+    // instancia. `new Fruta { ... }`
+    object Fruta {
+      def crear(_color: String): Fruta = ???
+    }
+  }
 
-  // Ejercicio 3. Crea una clase `Platano`, que herede de `Fruta`, fijando el
-  // color a "amarillo" y recibiendo el precio en el constructor.
+  object Ejercicio3 {
+    import Ejercicio1.Fruta
+    // Extiende la clase `Platano`, para que herede de `Fruta`, fijando el
+    // método `color` a "amarillo" y recibiendo el precio en el constructor.
+    class Platano
+  }
 
-  // Ejercicio 4: Crea una fruta de cualquier color y un plátano de cualquier
-  // precio. Imprime por pantalla el precio de la fruta (debería ser 3.0) y el
-  // color del plátano (debería ser "amarillo")
+  object Ejercicio4 {
+    import Ejercicio2.Fruta, Ejercicio3.Platano
+    // Crea una fruta de cualquier color y un plátano de cualquier precio.
+    // Imprime por pantalla el precio de la fruta (debería ser 3.0) y el color
+    // del plátano (debería ser "amarillo")
+    val fruta   = ???
+    val platano = ???
+    println("El precio de la fruta es: " + ???)
+    println("El color del plátano es: "  + ???)
+  }
 }
