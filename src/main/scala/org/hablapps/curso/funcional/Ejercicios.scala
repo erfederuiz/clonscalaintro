@@ -7,9 +7,8 @@ object Ejercicios extends App {
     // entrada. Utiliza la siguiente estructura.
     def concatenar(l1: Lista, l2: Lista): Lista = {
       l1 match {
-        // case Nada() => ???
-        // case Cons(c, r) => ???
-        case _ => ???
+        case Nada() => ???
+        case Cons(c, r) => ???
       }
     }
   }
