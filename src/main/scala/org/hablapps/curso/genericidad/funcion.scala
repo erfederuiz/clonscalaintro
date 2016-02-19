@@ -1,6 +1,6 @@
 package org.hablapps.curso.genericidad
 
-trait Funcion[A, B] {
+trait Funcion[-A, +B] {
   def apply(a: A): B
 }
 

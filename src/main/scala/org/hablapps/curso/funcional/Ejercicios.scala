@@ -7,8 +7,8 @@ object Ejercicios extends App {
     // entrada. Utiliza la siguiente estructura.
     def concatenar(l1: Lista, l2: Lista): Lista = {
       l1 match {
-        case Nada() => ???
-        case Cons(c, r) => ???
+        case Nada() => l2
+        case Cons(c, r) => Cons(c, concatenar(r, l2))
       }
     }
   }
@@ -19,7 +19,12 @@ object Ejercicios extends App {
     // elemento lo cumple, se devolverá `false`. A tener en cuenta:
     // - El tipo Boolean contiene los valores `true` y `false`
     // - El operador lógico "or" se representa mediante `b1 || b2`.
-    def existe(l: Lista, f: Int => Boolean): Boolean = ???
+    def existe(l: Lista, f: Int => Boolean): Boolean = {
+      l match {
+        case Nada() => false
+        case Cons(c, r) => f(c) || existe(r, f)
+      }
+    }
   }
 
   import Ejercicio2.existe
@@ -30,7 +35,7 @@ object Ejercicios extends App {
     // obligatorio que esta función reutilice `existe`. A tener en cuenta:
     // - El operador de igualdad se representa mediante `expr1 == expr2`
     def contiene(l: Lista, v: Int): Boolean = {
-      existe(l, ???)
+      existe(l, x => x == v)
     }
   }
 
@@ -41,6 +46,16 @@ object Ejercicios extends App {
     // incluido). A tener en cuenta:
     // - La estructura de control de flujo "if" se despliega con esta sintáxis:
     // `if (b) expr1 else expr2`
-    def tirarMientras(l: Lista, f: Int => Boolean): Lista = ???
+    def tirarMientras(l: Lista, f: Int => Boolean): Lista = {
+      l match {
+        case Nada() => l
+        case Cons(c, r) => {
+          if (f(c))
+            tirarMientras(r, f)
+          else
+            l
+        }
+      }
+    }
   }
 }
