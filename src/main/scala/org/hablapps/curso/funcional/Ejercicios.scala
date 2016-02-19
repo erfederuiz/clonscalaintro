@@ -28,7 +28,8 @@ object Ejercicios extends App {
   object Ejercicio3 {
     // Implementa el método `contiene` que nos indica si nuestra lista contiene
     // un determinado valor de tipo `Int` que se recibe como argumento. Es
-    // obligatorio que esta función reutilice `existe`
+    // obligatorio que esta función reutilice `existe`. A tener en cuenta:
+    // - El operador de igualdad se representa mediante `expr1 == expr2`
     def contiene(l: Lista, v: Int): Boolean = {
       existe(l, ???)
     }
